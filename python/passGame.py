@@ -1,42 +1,47 @@
-print("Welcome to The Cyber Password Quest 🔐")
-print("Step by step, build the ultimate password...")
+print("═══════════════════════════════════════════════════════")
+print("   Welcome to The Cyber Password Quest 🔐")
+print("   Step by step, build the ultimate password...")
+print("═══════════════════════════════════════════════════════\n")
 
 # Rule 1
-password = input("Rule 1: Password must start with 'W': ")
+password = input("🧩 Rule 1: Password must start with 'W'\n👉 Enter here: ")
 if not password.startswith("W"):
-    print("❌ Wrong ending! Try again.")
-    print("💀 Game Over")
+    print("\n❌ Wrong ending! Try again.")
+    print("💀 GAME OVER")
 else:
-    print("✅ Rule 1 passed!")
+    print("✅ Rule 1 passed!\n")
 
     # Rule 2
-    password = input("Rule 2: Add numbers '34' after W: ")
+    password = input("🧩 Rule 2: Add numbers '34' after W\n👉 Enter here: ")
     if password != "W34":
-        print("❌ Wrong ending! Try again.")
-        print("💀 Game Over")
+        print("\n❌ Wrong ending! Try again.")
+        print("💀 GAME OVER")
     else:
-        print("✅ Rule 2 passed!")
+        print("✅ Rule 2 passed!\n")
 
         # Rule 3
-        password = input("Rule 3: Continue with 'r37h3': ")
+        password = input("🧩 Rule 3: Continue with 'r37h3'\n👉 Enter here: ")
         if password != "W34r37h3":
-            print("❌ Wrong ending! Try again.")
-            print("💀 Game Over")
+            print("\n❌ Wrong ending! Try again.")
+            print("💀 GAME OVER")
         else:
-            print("✅ Rule 3 passed!")
+            print("✅ Rule 3 passed!\n")
 
             # Rule 4
-            password = input("Rule 4: Add 'Cy83r734MB': ")
+            password = input("🧩 Rule 4: Add 'Cy83r734MB'\n👉 Enter here: ")
             if password != "W34r37h3Cy83r734MB":
-                print("❌ Wrong ending! Try again.")
-                print("💀 Game Over")
+                print("\n❌ Wrong ending! Try again.")
+                print("💀 GAME OVER")
             else:
-                print("✅ Rule 4 passed!")
+                print("✅ Rule 4 passed!\n")
 
                 # Final Rule
-                password = input("Final Rule: End with '!!!': ")
+                password = input("FINAL RULE: End with '!!!'\n👉 Enter here: ")
                 if password == "W34r37h3Cy83r734MB!!!":
-                    print("Congrats, you unlocked the Cyber Password 🛡️🤖🦾🦿!!!")
+                    print("\n🎉 Congrats, you unlocked the Cyber Password!!!")
+                    print("══════════════════════════════════════════════════")
+                    print("      ACCESS GRANTED — SYSTEM SECURED 🔒")
+                    print("══════════════════════════════════════════════════")
                 else:
-                    print("❌ Wrong ending! Try again.")
-                    print("💀 Game Over")
+                    print("\n❌ Wrong ending! Try again.")
+                    print("💀 GAME OVER")
