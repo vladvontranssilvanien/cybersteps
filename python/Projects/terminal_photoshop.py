@@ -161,11 +161,11 @@ def load_image_from_url(url: str):
 
 def load_image_any(source: str):
     """Route to URL or local loader based on source."""
-    return load_image_from_url(source) if is_url(source) else load_image
-    (source)
+    return load_image_from_url(source) if is_url(source) else load_image(source)
 
 
 # Pixel manipulation helpers
+
 def get_red(px): return (px >> 16) & 0xFF
 def get_green(px): return (px >> 8) & 0xFF
 def get_blue(px): return px & 0xFF
@@ -280,7 +280,7 @@ if __name__ == "__main__":
     if not img:
         print(
             "Could not load image. For web, use a DIRECT image link "
-            "ends with .jpg/.png).")
+            "ends with .jpg/.png.")
         sys.exit(1)
 
     save_image(img,                          out("original.png"))
@@ -295,6 +295,5 @@ if __name__ == "__main__":
 
 # Photo link
 """
-https://hips.hearstapps.com/hmg-prod/images/nature-quotes-landscape-1648265299.jpg?crop=1.00xw:0.760xh;0,0.0587xh&resize=1200:*
-
+https://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg
 """
