@@ -161,7 +161,8 @@ def load_image_from_url(url: str):
 
 def load_image_any(source: str):
     """Route to URL or local loader based on source."""
-    return load_image_from_url(source) if is_url(source) else load_image(source)
+    return load_image_from_url(source) if is_url(
+        source) else load_image(source)
 
 
 # Pixel manipulation helpers
